@@ -1,0 +1,891 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html, body {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ostrich Sans */
+
+@font-face {
+    font-family: 'Ostrich Sans';
+    src: url('../font/ostrich-sans-black.eot');
+    src: local('☺'), url('../font/ostrich-sans-black.woff') format('woff'), url('../font/ostrich-sans-black.ttf') format('truetype'), url('../font/ostrich-sans-black.svg') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ostrich Sans';
+    src: url('../font/ostrich-sans-bold.eot');
+    src: local('☺'), url('../font/ostrich-sans-bold.woff') format('woff'), url('../fontt/ostrich-sans-bold.ttf') format('truetype'), url('../font/ostrich-sans-bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ostrich Sans';
+    src: url('../font/ostrich-sans-regular.eot');
+    src: local('☺'), url('../font/ostrich-sans-regular.woff') format('woff'), url('../font/ostrich-sans-regular.ttf') format('truetype'), url('../font/ostrich-sans-regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ostrich Sans';
+    src: url('../font/ostrich-sans-light.eot');
+    src: local('☺'), url('../font/ostrich-sans-light.woff') format('woff'), url('../font/ostrich-sans-light.ttf') format('truetype'), url('../font/ostrich-sans-light.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Ostrich Sans Dashed */
+
+@font-face {
+    font-family: 'Ostrich Sans Dashed';
+    src: url('../font/ostrich-dashed.eot');
+    src: local('☺'), url('../font/ostrich-dashed.woff') format('woff'), url('../font/ostrich-dashed.ttf') format('truetype'), url('../font/ostrich-dashed.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Ostrich Sans Rounded */
+
+@font-face {
+    font-family: 'Ostrich Sans Rounded';
+    src: url('../font/ostrich-rounded.eot');
+    src: local('☺'), url('../font/ostrich-rounded.woff') format('woff'), url('../font/ostrich-rounded.ttf') format('truetype'), url('../font/ostrich-rounded.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Ostrich Sans Inline */
+
+@font-face {
+    font-family: 'Ostrich Sans Inline';
+    src: url('../font/ostrich-sans-inline-regular.eot');
+    src: local('☺'), url('../font/ostrich-sans-inline-regular.woff') format('woff'), url('../font/ostrich-sans-inline-regular.ttf') format('truetype'), url('../font/ostrich-sans-inline-regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ostrich Sans Inline';
+    src: url('../font/ostrich-sans-inline-italic.eot');
+    src: local('☺'), url('../font/ostrich-sans-inline-italic.woff') format('woff'), url('../font/ostrich-sans-inline-italic.ttf') format('truetype'), url('../font/ostrich-sans-inline-italic.svg') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* DEFAULTS ===================================================================== */
+  
+ html,
+ body {
+    font-family: 'Ostrich Sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: #222;
+    height: 100%;
+    overflow: ;
+
+ }
+
+ body {
+    text-align: center;
+    height: 100%;
+    background-color: #d9fef9;
+ }
+
+ .container {
+    align-content: center;
+    padding: 10px;
+ }
+
+ section {
+    height: 100%;
+ }
+
+
+ a {
+    text-decoration: none;
+
+ }
+
+ p {
+    font-size: 1em;
+    font-weight: 400;
+
+ }
+
+ h3 {
+    font-family: 'Ostrich Sans Rounded';
+}
+
+
+/* HEADER & NAVIGATION ====================================================== */
+
+.main-header {
+    width: 100%;
+    margin: auto;
+    background-color: #f5f5f5;
+}
+
+nav {
+    width: 100%;
+    clear: both;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0px 15px;
+        padding-top: 10px;
+        margin: 10px 0;
+        font-family: 'Ostrich Sans Rounded';
+        letter-spacing: 2.5px;
+
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 0px 5px;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 1.8em;
+        color: black;
+        text-transform: lowercase;
+        font-weight: 700;
+    }
+
+    nav ul li a:hover {
+        color: #ff3267;
+    }
+
+.logo img {
+    padding-top: 15px;
+    max-width: 150px;
+}
+
+.home-intro {
+    margin: 25px;
+    font-family: 'Ostrich Sans';
+    margin-bottom: 0;
+}
+
+#intro {
+    font-size: 2.6em;
+    padding-top: 10px;
+    line-height: 1.2;
+    margin-bottom: 0;
+    letter-spacing: 8px;
+}
+
+.bio {
+    margin: 15px;
+}
+
+#bio {
+    font-weight: 500;
+    font-size: 2.5em;
+    letter-spacing: 2.5px;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 25px;
+    font-family: 'Ostrich Sans Rounded';
+}
+
+span {
+    font-family: 'Ostrich Sans Inline';
+    color: white;
+    background-color: black;
+    padding: 0.1em 0em 0.1em 0.15em;
+    letter-spacing: 10px;
+    box-shadow: -8px 11px 2px 0px #ff3267;
+    font-size: 3.2em;
+    line-height: 0.8;
+    text-align: center;
+
+}
+
+.copyright {
+    display: none;
+
+}
+
+footer a {
+    padding: 8px;
+}
+
+footer {
+    padding: 0 25px;
+    padding-top: 10px;
+    font-size: .6em;
+}
+
+
+
+
+/* ABOUT PAGE ====================================================== */
+
+body .about-page {
+    background-color: pink;
+}
+
+ .title {
+    font-family: }
+
+.about {
+    margin: 0px 15px;
+    text-align: left;
+    font-weight: 300;
+}
+
+.about p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 1.5;
+    padding-bottom: 5px;
+}
+
+.col-md-6 {
+    padding: 10px 20px;
+
+}
+
+
+h3 {
+    font-family: 'Ostrich Sans' !important;
+    letter-spacing: 8px;
+    font-size: 2.5em !important;
+    font-weight: 500 !important;
+    padding-right: 10px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+#about1 {
+    background-color: #fffee6;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    padding-bottom: 10px;
+}
+
+#about2 {
+    background-color: #f5f5f5;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    padding-bottom: 10px;
+}
+
+#about3 {
+    background-color: #dcefee;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    padding-bottom: 10px;
+}
+
+
+
+
+/* PROJECTS PAGE ====================================================== */
+ 
+.col-xs-12 img {
+    padding:15px ;
+    border-style: none;
+    box-shadow: none;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.top {
+    display: none;
+}
+
+
+
+/* contact PAGE ====================================================== */
+
+.contact {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 2.2em !important;
+    line-height: 40px !important;
+    font-weight: 600 !important;
+}
+
+.contact-page footer{
+    display: hidden;
+}
+
+.contact a {
+    font-size: 1.7em;
+    color: #ff3267;
+    text-decoration: none;
+}
+
+.follow-me {
+    text-align: center;
+    padding: 50px 10px;
+}
+
+.follow-me a {
+    padding: 8px;
+}
+
+.follow-me-desktop {
+    display: none;
+}
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+/*TABLET STYLES HERE*/
+
+@media only screen and (min-width: 768px) {
+
+    br {
+        display: ;
+    }
+
+    body.home {
+        background-image: url('../img/lc-port-copy3.jpg');
+        background-size: cover;
+    }
+
+    .main-header {
+        background-color: #ffffff;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    nav {
+    width: 70%;
+    float: right;
+    text-align: right;
+    clear: none;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    }
+
+
+    nav ul {
+        display: inline;
+        padding-left: 15px;
+        text-align: right;
+        font-size: 1em;
+        padding: 0px 0px;
+        padding-top: 0px;
+        margin: 0px 0px;
+    }
+
+    nav ul li {
+        padding-right: 0px;
+        padding-left: 35px;
+    }
+
+    nav ul li a {
+        font-size: 1.8em;
+        color: black;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: 'Ostrich Sans';
+        letter-spacing: 2px;
+    }
+
+
+    .logo img {
+    margin-left: 10px;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    float: left;
+    max-width: 80px;
+    }
+
+    main {
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #intro {
+    font-size: 3em;
+    line-height: 1.2;
+    text-align: left;
+    margin: 0px;
+    padding-top: 100px;
+    padding-bottom: 0px;
+
+
+    }
+
+    #bio {
+    padding-top: 40px;
+    max-width: none;
+    font-size: 3em;
+    text-align: left;
+    letter-spacing: 7px;
+    font-weight: 700;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .copyright {
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+body.about-page {
+        background-image: url('../img/about-b.jpg');
+        background-size: cover;
+    }
+
+
+.about {
+    padding-top: 30px;
+}
+
+#about2 {
+    background-color: #f5f5f5;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    padding-top: 15px;
+    padding-bottom: 22px;
+}
+
+#about3 {
+    background-color: #dcefee;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    padding-top: 15px;
+    padding-bottom: 22px;
+}
+
+body.contact-page {
+        background-image: url('../img/contact.jpg');
+        background-size: cover;
+    }
+
+
+.follow-me {
+    display: none;
+}
+
+h4 {
+    
+    font-family: 'Ostrich Sans'!important;
+    letter-spacing: 5px;
+    font-size: 3em !important;
+    line-height: 30px !important;
+
+}
+
+
+
+.contact1 {
+    margin: 30px 0;
+
+}
+
+.follow-me-desktop {
+    display: inherit;
+    margin: 20px 0;
+}
+
+.follow-me-desktop a {
+    margin-right: 7px;
+}
+
+.follow-me-desktop img {
+    margin-top: 10px;
+}
+
+
+.top {
+    display: block;
+}
+
+
+#cf {
+  position:;
+  height:250px;
+  width:330px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+
+
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+
+}
+
+
+
+
+
+
+
+
+/*DESKTOP STYLES HERE*/
+@media screen and (min-width: 992px) {
+
+      main {
+        max-width: 970px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #intro {
+        padding-top: 110px;
+    }
+
+    #bio {
+        padding-top: 50px;
+        font-size: 3.2em;
+        letter-spacing: 8px;
+    }
+
+    .copyright {
+    padding-top: 25px;
+}
+
+#about1 {
+    background-color: #fffee6;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    padding-top: 11px;
+    padding-bottom: 20px;
+}
+
+
+
+/*project hovers*/
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+
+      main {
+        max-width:1170px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #intro {
+        font-size: 3em;
+        padding-top: 100px;
+        padding-bottom: 0px;
+    }
+
+    span {
+        font-size: 3.5em;
+    }
+
+    #bio {
+        font-size: 2.8em;
+    }
+
+    .copyright {
+    padding-top: 50px;
+}
+
+#about1 {
+    background-color: #fffee6;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    padding-top: 30px;
+    padding-bottom: 42px;
+}
+
+#about1 p {
+    padding-right: 30px;
+    padding-left: 30px;
+
+}
+
+#about1 h3 {
+    padding-right: 30px;
+    padding-left: 30px;
+
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
